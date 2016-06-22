@@ -1,3 +1,7 @@
-var signalr = require('./jquery.signalR.js')
+window.$ = window.jQuery = require('jquery')
+require('./jquery.signalR.js')
 
-module.exports = signalr
+module.exports = {
+    connection: $.connection,
+    hubConnection: $.hubConnection
+}
